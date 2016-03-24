@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            width: 1366px;
+            height: 1500px;
+            margin: 10px auto;
+        }
+        .logo {
+            margin-left: 128px;
+            color: #3163ff;
+            font-size: 18px;
+            font-family: '宋体';
+            width: 1120px;
+        }
+        .logo img {
+            width: 154px;
+            height: 44px;
+            padding-left: 50px;
+        }
+        .logo span {
+            float: right;
+        }
+        .logo span .dz {
+            width: 126px;
+            height: 32px;
+            border-radius: 10px;
+            background-color: #3163ff;
+            color: black;
+            text-align: center;
+            padding-top: 15px;
+        }
+        .dz a {
+            text-decoration: none;
+        }
+        .menu {
+            width: 1356px;
+            background-color: #4a75f8;
+            height: 30px;
+        }
+        .menu .nav {
+            width: 1348px;
+            background-color: #aeb9d7;
+            height: 26px;
+            position: relative;
+            top: 2px;
+            left: 4px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .menu .nav ul li {
+            border-left: 1px solid black;
+            list-style: none;
+            float: left;
+            position: relative;
+            left: 120px;
+            top: 2px;
+            padding: 2px 52px 2px 52px;
+        }
+        .menu .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: '楷体';
+        }
+        .menu .nav ul .li_1 {
+            padding: 2px 62px 2px 62px;
+        }
+        /* .account {
+            background-color: #e8e4e4;
+            width: 904px;
+            height: 1094px;
+            position: absolute;
+            left: 200px;
+            top: -1px;
+        }
+        .account_1 {
+            font-family: "SimSun", 宋体, "Microsoft YaHei", 微软雅黑;
+            font-size: 24px;
+            color: black;
+            padding: 20px 36px;
+        }
+        hr {
+            border: 1px solid black;
+            width: 832px;
+            margin: 0px 36px;
+        }
+        .account_2 {
+            background-color: #517af5;
+            width: 832px;
+            height: 88px;
+            margin: 20px 36px;
+            font-size: 14px;
+        }
+        .account_2 ul li {
+            list-style-type: decimal;
+            padding-top: 10px;
+            margin-left: 12px;
+        }
+        .account_4 {
+            width: 815px;
+            height: 22px;
+            margin: 0px 36px;
+            background-color: #999999;
+            padding: 8px;
+        }
+        #cx1 {
+            background-color: #517af5;
+            border: #517af5;
+            margin-left: 10px;
+            border-radius: 5px;
+            width: 64px;
+            height: 22px;
+            font-size: 18px;
+        }
+        #xianshi {
+            width: 17px;
+            height: 17px;
+            margin-left: 115px;
+        }
+        #over {
+            width: 17px;
+            height: 17px;
+            margin-left: 25px;
+        }
+        #ing {
+            width: 17px;
+            height: 17px;
+            margin-left: 25px;
+        }*/
+        .contain {
+            position: absolute;
+            left: 245px;
+            width: 200px;
+            top: 122px;
+            background-color: #f0f0f0;
+        }
+        .contain_left .gerenzhongxin {
+            width: 94px;
+            height: 42px;
+            border-radius: 0px 0px 11px 11px;
+            background-color: #3765ff;
+            position: relative;
+            left: 50px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .contain_left .gerenzhongxin a {
+            text-decoration: none;
+        }
+        .liebiao {
+            margin-top: 20px;
+            font-weight: bold;
+            color: black;
+            width: 150px;
+        }
+        .liebiao img {
+            position: relative;
+            left: 35px;
+        }
+        .hr1 {
+            width: 115px;
+        }
+        .zhanghuguanli ul li {
+            list-style: none;
+            line-height: 36px;
+            text-align: right;
+        }
+        .zhanghuguanli ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 100;
+        }
+        .zhanghuguanli ul li a:hover {
+            color: red;
+        }
+        #binding {
+            position: absolute;
+            left: 200px;
+            top: 0px;
+            background-color: #e8e4e4;
+            width: 904px;
+            height: 1092px;
+        }
+        #binding_head {
+            margin-left: 36px;
+            margin-top: 26px;
+            font-family: '宋体';
+            font-size: 24px;
+        }
+        #binding_head_hr {
+            width: 826px;
+            border-color: black;
+            margin-top: 20px;
+        }
+        #binding_two {
+            width: 842px;
+            height: 90px;
+            background-color: #517AF5;
+            margin-left: 36px;
+            margin-top: 20px;
+        }
+        #binding_two ul li {
+            list-style: none;
+            list-style-type: decimal;
+            margin-left: 40px;
+            font-family: '宋体';
+            font-size: 14px;
+            padding-top: 12px;
+        }
+        #binding_three table {
+            margin-left: 36px;
+            margin-top: 46px;
+        }
+        #td1 {
+            width: 154px;
+            height: 38px;
+            text-align: center;
+            background-color: #819AE5;
+        }
+        #td2 input {
+            width: 254px;
+            height: 38px;
+        }
+        #imge {
+            width: 254px;
+            height: 38px;
+        }
+        #pvc {
+            width: 154px;
+            height: 34px;
+            text-align: center;
+            background-color: #819AE5;
+            float: right;
+            padding-top: 10px;
+        }
+        #cvp{text-decoration: none;color: black;}
+        #tupianyanzheng {
+            width: 415px;
+            height: 38px;
+            position: absolute;
+            left: 38px;
+        }
+        #tpz {
+            width: 253px;
+            height: 38px;
+            float: left;
+        }
+        #tpyz {
+            width: 253px;
+            height: 38px;
+            float: left;
+        }
+        #repro{  width: 455px;
+            height: 38px;
+            position: absolute;
+            left: 38px;margin-top: 62px;}
+        #pro{width: 205px;float:left;}
+        #re{width: 232px;float: right;}
+        #prove{width: 88px;height: 38px;background-color: #809AE5;float: right;font-size: 16px;}
+        #reset{background-color: #809AE5;width: 88px;height: 38px;float: left;font-size: 16px;}
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="" alt="logo">&nbsp;&nbsp;打造中国金融抵押第一选择<span><div  class="dz"><a href="">登录</a>/<a href="">注册</a></div></span>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="nav">
+            <ul>
+                <li class="li_1"><a href="">首页</a>
+                </li>
+                <li><a href="">抵押融资</a>
+                </li>
+                <li><a href="">二手汽车</a>
+                </li>
+                <li><a href="">客户须知</a>
+                </li>
+                <li><a href="">个人中心</a>
+                </li>
+                <li><a href="">客服咨询</a>
+                </li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contain">
+        <div class="contain_left">
+            <div class="gerenzhongxin"><a href="/">个人中心</a>
+            </div>
+            <div class="liebiao">
+                <i><img src="/" alt="ss"></i>&nbsp;&nbsp;&nbsp;<span>账户管理</span>
+                <hr class="hr1" />
+                <div class="zhanghuguanli">
+                    <ul>
+                        <li><a href="/">个人资料</a>
+                        </li>
+                        <li><a href="/">账户绑定</a>
+                        </li>
+                        <li><a href="/">银行卡管理</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="liebiao">
+                <i><img src="/" alt="ss"></i>&nbsp;&nbsp;&nbsp;<span>资金管理</span>
+                <hr class="hr1" />
+                <div class="zhanghuguanli">
+                    <ul>
+                        <li><a href="/">充值提现</a>
+                        </li>
+                        <li><a href="/">资金明细</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="liebiao">
+                <i><img src="/" alt="ss"></i>&nbsp;&nbsp;&nbsp;<span>投资明细</span>
+                <hr class="hr1" />
+                <div class="zhanghuguanli">
+                    <ul>
+                        <li>
+                            <a href="/">投资记录</a>
+                        </li>
+                        <li><a href="/">待付款项目</a>
+                        </li>
+                        <li><a href="/">自主投标</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="liebiao">
+                <i><img src="/" alt="ss"></i>&nbsp;&nbsp;&nbsp;<span>邀请推广</span>
+                <hr class="hr1" />
+                <div class="zhanghuguanli">
+                    <ul>
+                        <li><a href="/">推广详情</a>
+                        </li>
+                        <li><a href="/">邀请讯息</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="liebiao">
+                <i><img src="/" alt="ss"></i>&nbsp;&nbsp;&nbsp;<span>红包福利</span>
+                <hr class="hr1" />
+                <div class="zhanghuguanli">
+                    <ul>
+                        <li><a href="/">我的红包</a>
+                        </li>
+                        <li><a href="/">体验金</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="binding">
+            <div id="binding_head">账户绑定
+                <hr id="binding_head_hr" />
+            </div>
+            <div id="binding_two">
+                <ul>
+                    <li>请尽快完善账户，以方便您的投资计划。</li>
+                    <li>请勿绑定信用卡，以免带来麻烦。</li>
+                    <li>本公司将按照相关法律报收信息，避免信息泄露。</li>
+                </ul>
+            </div>
+            <div id="binding_three">
+                <table>
+                    <tr>
+                        <td id="td1">卡用户名</td>
+                        <td id="td2">
+                            <input type="text" name="username" value=" " class="us" placeholder="开卡户名应与预留手机号主一致" id="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">银行卡号</td>
+                        <td id="td2">
+                            <input type="text" name="accountnumber" value=" " class="us" placeholder="请输入银行卡号" id="accountnum">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">开户银行</td>
+                        <td id="td2">
+                            <input type="text" name="bank" value=" " class="us" placeholder="请输入开户银行名称" id="bank">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">银行卡预留手机号</td>
+                        <td id="td2">
+                            <input type="text" name="rcpn" value=" " class="us" placeholder="请与银行卡预留手机号保持一致" id="rcpn">
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                    <td id="td4">
+                        <input type="text" name="imge" value=" " class="us" placeholder="请输入验证码" id="imge">
+                 <a href="/" id="pvc">图片验证码</a>
+                    </td>
+                </tr>*/-->
+                </table>
+                <div id="tupianyanzheng">
+                    <div id="tpz">
+                        <input type="text" name="imge" value=" " class="us" placeholder="请输入验证码" id="tpyz">
+                    </div>
+                    <div id="pvc"><a href="/" id="cvp">图片验证码</a>               <!--houtai-->
+                    </div>
+                </div>
+                <div id="repro">
+                    <div id="pro"> <input type="button" name="button1" value="确定" id="prove" onclick="queding()"></div>   <!--js-->
+                    <div id="re"> <input type="button" name="reset" value="重置" id="reset" onclick="queding()"></div>    <!--js-->
+                </div>
+              
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
