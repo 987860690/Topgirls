@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>成绩单</title>
+    <script type="text/javascript">
+        function Chengji() {
+            var num = document.getElementsByTagName("input")[0].value;
+
+            var name = document.getElementsByTagName("input")[1].value;
+
+            var score = document.getElementsByTagName("input")[2].value;
+
+            if ((num == "") || (name == "") || (score =="")) {
+                alert("输入信息不完整，请重新输入。");
+                return false;
+            }
+            if (isNaN(num)) {
+                alert('请输入数字');
+                  var no = document.getElementsByTagName("input")[0].value="";
+                return false;
+            }
+            if (isNaN(score)) {
+                alert("请输入数字");
+                var no = document.getElementsByTagName("input")[2].value="";
+                return false;
+            } else {
+                if ((score > 100) || (score < 0)) {
+                    alert('请输入成绩范围在0~100之间！')
+
+                    return false;
+                }
+
+            }
+            return true;
+        }
+
+        function Submit() {
+            var flag = Chengji();
+           var num = document.getElementsByTagName("input")[0].value;
+
+            var name = document.getElementsByTagName("input")[1].value;
+
+            var score = document.getElementsByTagName("input")[2].value;
+            if (flag) {
+                alert('学号:' + num + '\n' + '姓名：' + name + '\n' + '成绩：' + score + '\n');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align='center'>成绩单</h1>
+    <table style="width:50%" border='1' align='center'>
+        <tr>
+            <td>学号：</td>
+            <td>
+                <input type="text" id="Num" placeholder="请输入学号" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td>
+                <input type="text" id="Name" placeholder="请输入您的名字" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>成绩</td>
+            <td>
+                <input type="text" id="Score" placeholder="请输入成绩" value="">
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="2">
+                <input type="button" id="Submit" value="提交" onclick="Submit()">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
