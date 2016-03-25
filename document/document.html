@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document 对象</title>
+    <script type="text/javascript">
+        var userName;
+
+        function greetUser() {
+            alert('Hello ,美女. 请点击图片，(*^__^*) 嘻嘻……');
+        }
+
+        function touchRock() {
+            if (userName) {
+                alert("I like the attention," + userName + ",thankyou!");
+            } else {
+                userName = prompt("what is your name?", "Enter your name here.");
+                if (userName) {
+                    alert("It is good to meet you," + userName + ".下面是个大美女哦！");
+                }
+                  alert("请点一下美女图片，可以继续聊天哦。O(∩_∩)O哈哈~");
+
+                document.getElementById("rockImg").src = "meinv.jpg";
+                setTimeout("document.getElementById('rockImg').src='rock.jpg';", 200000);
+            }
+        }
+    </script>
+    <style type="text/css">
+        img {
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body onload="greetUser();">
+
+    <div style="margin-top:100px;text-align:center">
+        <img src="rock.jpg" id="rockImg" alt="iRock" style="cursor:pointer" onclick="touchRock();" />
+    </div>
+</body>
+
+</html>
