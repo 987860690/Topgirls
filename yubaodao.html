@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    #main {
+     position: relative;
+    width: 88%;
+    height: 720px;
+    float: right;
+    margin-top: 0px;
+    background-color: beige;
+        }
+        .table_0{width: 60%;}
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <table class="table_0">
+            <tr>
+                <td class="td_1">准考证号：</td>
+                <td class="td_2">140312102**</td>
+                <td class="td_1">姓名：</td>
+                <td class="td_2">张三</td>
+            </tr>
+            <tr>
+                <td class="td_1">身份证号：</td>
+                <td class="td_2">410926199800553115</td>
+                <td class="td_1">省份：</td>
+                <td class="td_2"></td>
+            </tr>
+            <tr>
+                <td class="td_1">录取专业名称：</td>
+                <td class="td_2"></td>
+                <td class="td_1">层次：</td>
+                <td class="td_3">本科</td>
+                <td class="td_4">就读地点：</td>
+                <td class="td_5">南校区</td>
+            </tr>
+            <tr>
+                <td class="td_1">通知书快递号：</td>
+                <td class="td_2"></td>
+                <td class="td_1">通知书寄出时间：</td>
+                <td class="td_2"></td>
+            </tr>
+            <tr>
+                <td class="td_1">联系电话</td>
+                <td class="td_2">
+                    <input type="text" id="tel">
+                </td>
+                <td class="td_1">邮政编码：</td>
+                <td class="td_2">
+                    <input type="text" id="zipcode">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">是否申请在校住宿：</td>
+                <td colspan="3">
+                    是<input type="radio" id="en" name="dog" checked>
+                    否<input type="radio" id="en" name="dog">
+                    <span class="beizhu">
+                        备注：安阳工学院学生申请在校住宿
+                    </span>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="td_1">家庭住址：</td>
+                <td class="td_2" colspan="3"><input type="text" id="home"></td>
+            </tr>
+            <tr>
+                <td class="td_1">报道方式：</td>
+                <td colspan="3">
+                    <input type="radio" value=" " name="report">按时
+                    <input type="radio" value=" " name="report">请假
+                    <input type="radio" value=" " name="report">申请保留入学资格
+                    <input type="radio" value=" " name="report">放弃入学资格
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">报道方式：</td>
+                <td class="td_money" >
+                    <input type="radio" value=" " name="report">按时
+                    <input type="radio" value=" " name="report">请假
+                    <input type="radio" value=" " name="report">申请保留入学资格
+                    <input type="radio" value=" " name="report">放弃入学资格
+                </td>
+                <td class="td_1">是否办理绿色通道：</td><td><input type="checkbox" id="grennway"></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
