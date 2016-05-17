@@ -43,7 +43,14 @@
         }
         .menu .nav {
             width: 1348px;
-            background-color: #aeb9d7;
+            background: -ms-linear-gradient( #0000ff, #fff, #0000ff);
+            /* IE 10 */
+            background: -moz-linear-gradient( #0000ff, #b8c4cb,  #0000ff);
+            /*火狐*/
+            background: -webkit-linear-gradient( #6262f5, #fff, #6262f5);
+            /*Safari5.1 Chrome 10+*/
+            background: -o-linear-gradient( #0000ff, #fff, #0000ff);
+            /*Opera 11.10+*/
             height: 26px;
             position: relative;
             top: 2px;
@@ -237,7 +244,10 @@
             float: right;
             padding-top: 10px;
         }
-        #cvp{text-decoration: none;color: black;}
+        #cvp {
+            text-decoration: none;
+            color: black;
+        }
         #tupianyanzheng {
             width: 415px;
             height: 38px;
@@ -254,14 +264,35 @@
             height: 38px;
             float: left;
         }
-        #repro{  width: 455px;
+        #repro {
+            width: 455px;
             height: 38px;
             position: absolute;
-            left: 38px;margin-top: 62px;}
-        #pro{width: 205px;float:left;}
-        #re{width: 232px;float: right;}
-        #prove{width: 88px;height: 38px;background-color: #809AE5;float: right;font-size: 16px;}
-        #reset{background-color: #809AE5;width: 88px;height: 38px;float: left;font-size: 16px;}
+            left: 38px;
+            margin-top: 62px;
+        }
+        #pro {
+            width: 205px;
+            float: left;
+        }
+        #re {
+            width: 232px;
+            float: right;
+        }
+        #prove {
+            width: 88px;
+            height: 38px;
+            background-color: #809AE5;
+            float: right;
+            font-size: 16px;
+        }
+        #reset {
+            background-color: #809AE5;
+            width: 88px;
+            height: 38px;
+            float: left;
+            font-size: 16px;
+        }
     </style>
 </head>
 
@@ -410,15 +441,22 @@
                     <div id="tpz">
                         <input type="text" name="imge" value=" " class="us" placeholder="请输入验证码" id="tpyz">
                     </div>
-                    <div id="pvc"><a href="/" id="cvp">图片验证码</a>               <!--houtai-->
+                    <div id="pvc"><a href="/" id="cvp">图片验证码</a>
+                        <!--houtai-->
                     </div>
                 </div>
                 <div id="repro">
-                    <div id="pro"> <input type="button" name="button1" value="确定" id="prove" onclick="queding()"></div>   <!--js-->
-                    <div id="re"> <input type="button" name="reset" value="重置" id="reset" onclick="queding()"></div>    <!--js-->
+                    <div id="pro">
+                        <input type="button" name="button1" value="确定" id="prove" onclick="queding()">
+                    </div>
+                    <!--js-->
+                    <div id="re">
+                        <input type="button" name="reset" value="重置" id="reset" onclick="queding()">
+                    </div>
+                    <!--js-->
                 </div>
-              
-               
+
+
             </div>
         </div>
     </div>
